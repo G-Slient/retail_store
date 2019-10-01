@@ -1,0 +1,114 @@
+<app-main></app-main>
+
+<div class="col-sm-12 col-md-10 col-lg-9 card mt-5 mx-auto" style="padding:0%;margin-left:0%;margin-right:0%;width: 100%">
+        <div class="card">
+        <div class="card-header text-center" appBackgroundColor><strong> Retail Association Rules</strong></div>
+
+        <div></div>
+        <div>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <thead appBackgroundColor>
+                        <tr>
+                          <th scope="col">S No.</th>
+                          <th scope="col">Item Base</th>
+                          <th scope="col">Item Add</th>
+                          <th scope="col">Lift</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>{{taskDetails.rule_1.item_add}}</td>
+                          <td>{{taskDetails.rule_1.item_base}}</td>
+                          <td>{{taskDetails.rule_1.lift}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>{{taskDetails.rule_2.item_add}}</td>
+                            <td>{{taskDetails.rule_2.item_base}}</td>
+                            <td>{{taskDetails.rule_2.lift}}</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>{{taskDetails.rule_3.item_add}}</td>
+                              <td>{{taskDetails.rule_3.item_base}}</td>
+                              <td>{{taskDetails.rule_3.lift}}</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>{{taskDetails.rule_4.item_add}}</td>
+                                <td>{{taskDetails.rule_4.item_base}}</td>
+                                <td>{{taskDetails.rule_4.lift}}</td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td>{{taskDetails.rule_5.item_add}}</td>
+                                  <td>{{taskDetails.rule_5.item_base}}</td>
+                                  <td>{{taskDetails.rule_5.lift}}</td>
+                                </tr>
+                      </tbody>
+                    </table>
+                    
+                  </div>
+              </div>
+        
+        <!--
+        <div class="col-12 col-md-10 col-lg-8" style="padding:0.5%;margin-left:15.5%; margin-top:2px">
+          <div class="table-responsive">
+              <div class="card card-sm" appBackgroundColor>
+                <div class="card-body row no-gutters align-items-center">
+                    <label> Search By - &nbsp;&nbsp;</label>
+                  <div class="dropdown">  
+                   <select class="form-control" #selectedValue>
+                      <option value="assignee">Task Type</option>
+                      <option value="assetModelName">Website</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                     <input class="form-control" name="searchName"  [(ngModel)]="searchText" type="search" #username placeholder="Enter Details">
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-success" (click)="searchUser(username.value,selectedValue.value)" [disabled]="searchdisabled" type="submit">Search</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="taskDetails && taskDetails.length>0">
+            <form (ngSubmit)="addUser(assetForm)" #assetForm=ngForm class="form-group">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <thead appBackgroundColor>
+                        <tr>
+                          <th scope="col">S No.</th>
+                          <th scope="col">Task Type</th>
+                          <th scope="col">Website</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Start Date</th>
+                          <th scope="col">End Date</th>
+                          <th scope="col">Link</th>
+                          <th scope="col">Remarks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let task of taskDetails;let i = index;">
+                          <td>{{i+1}}</td>
+                          <td>{{task.taskType}}</td>
+                          <td>{{task.website}}</td>
+                          <td>{{task.tasktitle}}</td>
+                          <td>{{task.startDate | date:'shortDate' | date: 'dd/MM/yyyy'}}</td>
+                          <td>{{task.endDate | date:'shortDate' |date: 'dd/MM/yyyy'}}</td>
+                          <td><a href="{{task.link}}" target="_blank">LINK</a></td>
+                          <td>{{task.remarks}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                  </div>
+              </div>
+            -->
+</div>
+</div>
