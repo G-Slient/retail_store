@@ -23,7 +23,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.1",
+    "mongoose": "^5.7.5",
     "ng2-cookies": "^1.0.12",
     "rxjs": "~6.4.0",
     "shortid": "^2.2.14",
