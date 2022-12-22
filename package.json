@@ -22,7 +22,7 @@
     "@syncfusion/ej2-angular-calendars": "^17.2.49",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.7.5",
     "ng2-cookies": "^1.0.12",
     "rxjs": "~6.4.0",
